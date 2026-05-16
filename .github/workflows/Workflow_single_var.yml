@@ -1,0 +1,14 @@
+name: Tesing for workflow
+on: workflow_dispatch
+env:
+  cloud: AWS_Cloud
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    env:
+      Greeting: Hello
+    steps:
+      - name: "Say Hello, Rose its Monday"
+        run: echo "Greeting $First_Name is using $cloud!"
+        env:
+            First_Name: Khaira
