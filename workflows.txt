@@ -1,0 +1,12 @@
+Your daily workflow:
+
+1. git checkout -b feature/add-sg-rule
+2. # make changes to .tf files
+3. git push origin feature/add-sg-rule
+4. # Open Pull Request on GitHub
+   # → Actions auto-runs terraform plan
+   # → Plan output is posted as PR comment
+   # → You review: "will create 2, change 0, destroy 0"
+5. Merge PR to main
+   # → Actions auto-runs terraform apply
+   # → Real AWS infra is created/updated

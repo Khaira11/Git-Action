@@ -1,0 +1,9 @@
+🔑 Step 2 — AWS prerequisites
+Before writing any code, set up two things in AWS:
+A) Create an IAM user for Terraform
+
+Go to AWS Console → IAM → Users → Create user
+Name it terraform-deployer
+Attach policy: AdministratorAccess (for learning) or a scoped policy
+Go to Security Credentials → Create Access Key → choose "CI/CD"
+Save the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
