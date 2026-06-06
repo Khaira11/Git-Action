@@ -1,7 +1,7 @@
 B) Create S3 bucket + DynamoDB table for remote state
 bash# Run these once locally with your AWS CLI
 aws s3api create-bucket \
-  --bucket my-terraform-state-bucket \
+  --bucket harpreet-terraform \
   --region us-west-2 \
   --create-bucket-configuration LocationConstraint=ap-south-1
 
