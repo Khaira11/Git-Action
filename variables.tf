@@ -1,5 +1,5 @@
 variable "aws_region" {
-  default = "ap-south-1"  # Mumbai — closest to India
+  default = "ap-south-1" # Mumbai — closest to India
 }
 
 variable "project_name" {
