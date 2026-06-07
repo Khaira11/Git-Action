@@ -1,5 +1,3 @@
-
-
 terraform {
   required_version = ">= 1.6"
 
@@ -12,7 +10,7 @@ terraform {
 
   backend "s3" {
     bucket         = "harpreet-terraform"
-    key            = "infra/terraform.tfstate"
+    key            = "terraform.tfstate"
     region         = "ap-south-1"
     encrypt        = true
     dynamodb_table = "terraform-state-lock"

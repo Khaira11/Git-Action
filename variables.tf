@@ -1,12 +1,19 @@
 variable "aws_region" {
-  default = "ap-south-1" # Mumbai — closest to India
+  default = "ap-south-1"
 }
 
-variable "project_name" {
-  default = "my-gitops-project"
+variable "vpc_cidr" {
+  default = "10.0.0.0/16"
 }
 
-variable "ami_id" {
-  # Amazon Linux 2023 in ap-south-1
-  default = "ami-0f58b397bc5c1f2e8"
+variable "subnet_cidr" {
+  default = "10.0.1.0/24"
+}
+
+variable "instance_type" {
+  default = "t2.micro"
+}
+
+variable "key_name" {
+  description = "AWS Key Pair Name"
 }
