@@ -15,5 +15,5 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-  description = "github-actions-key
+  description = "github-actions-key"
 }
