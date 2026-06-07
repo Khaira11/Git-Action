@@ -15,5 +15,5 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-  description = "AWS Key Pair Name"
+  description = "github-actions-key
 }
